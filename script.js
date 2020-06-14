@@ -1,5 +1,5 @@
 const container = document.querySelector(".container");
-const eraser = document.getElementById("eraser");
+const eraser = document.getElementById("erase");
 const reset = document.getElementById("reset");
 let squares;
 
