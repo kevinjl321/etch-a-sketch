@@ -1,0 +1,51 @@
+.container {
+    background: white;
+    grid-area: container;
+    display: grid;
+    justify-self: center;
+    border: 5px solid rgb(168, 126, 207);
+    width: 70vmin;
+    height: 70vmin;
+}
+
+.buttons{
+    grid-area: btns;
+    display: flex;
+    flex-direction: column;
+    justify-self: start;
+}
+
+header{
+    grid-area: header;
+    justify-content: center;
+    display: flex;
+}
+
+h1{
+    font-family: monospace;
+    font-size: 30px;
+}
+
+body {
+    display: grid;
+    grid-gap: 1vw;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr auto auto 1fr;
+    grid-template-areas: 
+        "header header header header"
+        ". container container btns";
+    background-color: rgb(184, 238, 245);
+}
+
+.gridSquare{
+    border: 1px solid rgb(145, 141, 141);
+}
+
+button:hover, #color:hover, #color:focus, #randomColor:focus, #opacity:focus, #eraser:focus {
+    background: orange;
+    box-shadow: 0 0 5px white;
+}
+
+#erase {
+    margin-top: 15vmin;
+}
